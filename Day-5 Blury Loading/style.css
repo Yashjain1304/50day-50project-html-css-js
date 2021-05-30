@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  height: 100vh;
+}
+.bg {
+  background: url("https://wallpapercave.com/wp/wp7864479.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: calc(100vw + 100px);
+  height: calc(100vh + 100px);
+  z-index: -1;
+  filter: blur(50px);
+}
+.loading {
+  font-size: 50px;
+  color: #fff;
+}
