@@ -51,26 +51,26 @@ body {
   left: 3px;
   align-items: center;
   justify-content: center;
-  animation: slideOff 0.3s linear forwards;
+  animation: Off 0.3s linear forwards;
 }
 
 .toggle:checked + .label .ball {
-  animation: slideOn 0.3s linear forwards;
+  animation: On 0.3s linear forwards;
 }
 
-@keyframes slideOn {
+@keyframes On {
   0% {
     transform: translateX(0) scale(1);
   }
   50% {
-    transform: translate(20px) scale(1.1);
+    transform: translate(20px) scale(1.2);
   }
   100% {
     transform: translate(40px) scale(1);
   }
 }
 
-@keyframes slideOff {
+@keyframes Off {
   0% {
     transform: translateX(40px) scale(1);
   }
