@@ -10,7 +10,8 @@ ratingContainer.addEventListener("click", (e) => {
     removeActive();
     e.target.parentNode.classList.add("active");
     // console.log(e.target.parentNode);
-    selectedRating = e.target.nextElementSibling.innerHTML;
+    // console.log(e.target.parentNode.querySelector("#small").innerHTML);
+    selectedRating = e.target.parentNode.querySelector("small").innerHTML;
     console.log(selectedRating);
   }
 });
